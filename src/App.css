@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Wrapper */
+.todo-wrapper {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.task-item span {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-item:hover {
+  background: #ececec;
+}
+
+/* Completed Tasks - Strikethrough */
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Action Buttons */
+.actions button {
+  margin-left: 6px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit {
+  background: #ffc107;
+}
+
+.delete {
+  background: #dc3545;
+}
+
+.edit:hover {
+  background: #e0a800;
+}
+
+.delete:hover {
+  background: #c82333;
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+}
